@@ -174,8 +174,6 @@ sed -i "s|\"trail_head_blocks\": [0-9]*|\"trail_head_blocks\": $TRAIL_HEAD_BLOCK
 sed -i "s|\(registry\s*=\s*\).*|\1$REGISTRY;|" projects/hello-world/contracts/script/Deploy.s.sol
 sed -i "s|\(RPC_URL\s*=\s*\).*|\1\"$RPC_URL\";|" projects/hello-world/contracts/script/Deploy.s.sol
 
-# 8.4 docker-compose.yaml
-sed -i "s|image: ritualnet/infernet:.*|image: ritualnet/infernet:$INFERNET_VERSION|" deploy/docker-compose.yaml
 # node 이미지 latest
 sed -i 's|ritualnetwork/infernet-node:[^"]*|ritualnetwork/infernet-node:latest|' deploy/docker-compose.yaml
 
