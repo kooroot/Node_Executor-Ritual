@@ -42,7 +42,7 @@
   [Basescan](https://basescan.org/)에서 노드를 구동한 주소를 검색
   <img width="1352" alt="image" src="https://github.com/user-attachments/assets/279035ed-322d-4d11-a248-df4d48c49dff" />
   Contract Creation 후 Say GM 메소드의 To 주소가 노드 주소입니다.
-  Say GM까지 정상 작동했다면 [노드등록주소](https://basescan.org/address/0x8d871ef2826ac9001fb2e33fdd6379b6aabf449c#writeContract)에 접속하여 지갑을 연결한 후
+  Say GM까지 정상 작동했다면 [노드등록주소](https://basescan.org/address/0x8d871ef2826ac9001fb2e33fdd6379b6aabf449c#writeContract) 에 접속하여 지갑을 연결한 후
   registerNode (0x672d7a0d) -> 약 1시간 후(Cooldown) -> activateNode (0x105ddd1d)순으로 진행합니다.
   <img width="1365" alt="image" src="https://github.com/user-attachments/assets/e2412e09-cc6a-4578-a142-bd1ca05e054f" />
 
