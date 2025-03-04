@@ -30,7 +30,7 @@
   chmod +x ritual_node_linux.sh
   ```
 
-4. 스크립트를 실행  
+3. 스크립트를 실행  
   ```bash
   ./ritual_node_linux.sh
   ```
@@ -38,7 +38,7 @@
    - Docker/Foundry/infernet-container-starter 등이 자동 설치/클론/설정됩니다.  
    - 설치 과정에서 `sudo` 암호 입력이 필요할 수 있습니다.
 
-5. 노드 작동 확인 및 등록
+4. 노드 작동 확인 및 등록
   [Basescan](https://basescan.org/)에서 노드를 구동한 주소를 검색
   <img width="1352" alt="image" src="https://github.com/user-attachments/assets/279035ed-322d-4d11-a248-df4d48c49dff" />
   Contract Creation 후 Say GM 메소드의 To 주소가 노드 주소입니다.
