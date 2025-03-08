@@ -1,6 +1,6 @@
-# Ritual Node Setup (Linux)
+# Ritual Node Setup (Linux & Mac)
 
-이 저장소에는 **리눅스(Ubuntu 계열)** 환경에서 **Ritual Node**(Infernet) 설치와 설정을 자동화하는 스크립트(`ritual_node_linux.sh`)가 포함되어 있습니다.  
+이 저장소에는 **리눅스(Ubuntu 계열)와 MacOS** 환경에서 **Ritual Node**(Infernet) 설치와 설정을 자동화하는 스크립트(`ritual_node.sh`, `ritual_node_mac.sh`)가 포함되어 있습니다.  
 아래 스크립트는 다음 과정을 한 번에 처리합니다:
 
 1. **Docker / Docker Compose** 설치 확인 및 자동 설치  
@@ -19,7 +19,7 @@
 ---
 
 ## 설치 및 실행 방법
-
+**Linux**
 1. 스크립트를 다운로드
   ```bash
   wget https://raw.githubusercontent.com/kooroot/Node_Executor-Ritual/refs/heads/main/ritual_node.sh
@@ -27,18 +27,40 @@
 
 2. 실행 권한을 부여
   ```bash
-  chmod +x ritual_node_linux.sh
+  chmod +x ritual_node.sh
   ```
 
 3. 스크립트를 실행  
   ```bash
-  ./ritual_node_linux.sh
+  ./ritual_node.sh
+  ```
+   - 도중에 **Private Key**(`0x...`)를 묻는 입력란이 있으며,  
+   - Docker/Foundry/infernet-container-starter 등이 자동 설치/클론/설정됩니다.  
+   - 설치 과정에서 `sudo` 암호 입력이 필요할 수 있습니다.
+
+**MacOS**
+1. 스크립트를 다운로드
+  ```bash
+  wget https://raw.githubusercontent.com/kooroot/Node_Executor-Ritual/refs/heads/main/ritual_node_mac.sh
+  ```
+
+2. 실행 권한을 부여
+  ```bash
+  chmod +x ritual_node_mac.sh
+  ```
+
+3. 스크립트를 실행  
+  ```bash
+  ./ritual_node_mac.sh
   ```
    - 도중에 **Private Key**(`0x...`)를 묻는 입력란이 있으며,  
    - Docker/Foundry/infernet-container-starter 등이 자동 설치/클론/설정됩니다.  
    - 설치 과정에서 `sudo` 암호 입력이 필요할 수 있습니다.
 
 4. 노드 작동 확인
+  `docker logs -f infernet-node`를 확인하여 <img width="754" alt="image" src="https://github.com/user-attachments/assets/a2d66bcc-da5c-4bd5-88cf-1164c5e27cd2" />
+  노드가 잘 동작하는지 확인
+
   [Basescan](https://basescan.org/)에서 노드를 구동한 주소를 검색
   <img width="1352" alt="image" src="https://github.com/user-attachments/assets/279035ed-322d-4d11-a248-df4d48c49dff" />
   Contract Creation 후 Say GM 메소드의 To 주소가 노드 주소입니다.
