@@ -138,8 +138,8 @@ echo "[단계 7] Ritual Node 구성 파일 수정..."
 read -p "Enter your Private Key (0x...): " PRIVATE_KEY
 
 # 기본 설정
-RPC_URL="https://base.drpc.org"
-RPC_URL_SUB="https://mainnet.base.org/"
+RPC_URL="https://base-rpc.publicnode.com"
+RPC_URL_SUB="https://base.drpc.org"
 # Registry 주소 교체
 REGISTRY="0x3B1554f346DFe5c482Bb4BA31b880c1C18412170"
 SLEEP=3
