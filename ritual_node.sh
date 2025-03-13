@@ -119,6 +119,7 @@ echo
 echo "[단계 5] infernet-container-starter 클론..."
 git clone https://github.com/ritual-net/infernet-container-starter
 cd infernet-container-starter || { echo "[오류] 디렉토리 이동 실패"; exit 1; }
+docker pull ritualnetwork/hello-world-infernet:latest
 
 ##################################
 # 6. screen 세션에서 초기 배포(make deploy-container)
